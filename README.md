@@ -52,6 +52,15 @@ The server is running on localhost:4567 by default. You can manage the scoreboar
 
         Example: http://localhost:4567/username/5555
 
+Performance
+---
+
+Performance for 1.000.000 records on a Core2Duo2.4 Macbook:
+
+    Top10: 0.040801s
+    Get rank: 0.002874s
+    Update one record: 0.001483s
+
 
 Contribution, Testing
 ---
