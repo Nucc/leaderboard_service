@@ -45,4 +45,13 @@ class LeaderboardTest < MiniTest::Unit::TestCase
     assert_equal 15, @board.rank("user15")
   end
 
+  def test_when_score_change
+    @board["user1"] = 10
+    @board["user2"] = 20
+    @board["user3"] = 30
+
+    @board["user1"] = 40
+    assert_equal 1, @board.rank("user1")
+  end
+
 end
